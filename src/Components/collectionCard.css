@@ -1,0 +1,44 @@
+.collectionCard{
+    background-color: #1c1c1e;
+    border-radius: 20px;
+    transition: 0.3s;
+    width: 300px;
+    height: 500px;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.collectionCard:hover{
+    box-shadow: 0px 0px 5px 0px rgba(192, 179, 179, 0.897);
+}
+
+.collectionCard>img{
+    width: 100%;
+}
+
+.collectionCardPrice> img{
+    height: 23px;
+}
+
+.collectionCardInfo{
+    padding: 10px;
+}
+.id{
+    font-weight: 600;
+    font-size: 18px;
+    color: #a1a5b0;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.collectionCardPrice{
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+    margin-top: 10px;
+}
