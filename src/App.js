@@ -7,11 +7,10 @@ import Main from "./Components/Main.js";
 function App() {
   const [punkListData, setPunkListData] = useState([]);
   const [selectedPunk, setSelectedPunk] = useState(0);
-  const header = {"Access-Control-Allow-Origin":"*"};
   useEffect(() => {
     const getMyNFTs = async () => {
       const openseaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0xE4C7B90063254c413E34f7f6a31664C0d567f669&order_direction=asc",{headers:header}
+        "https://testnets-api.opensea.io/assets?asset_contract_address=0xE4C7B90063254c413E34f7f6a31664C0d567f669&order_direction=asc"
       );
       console.log(openseaData.data.assets);
       setPunkListData(openseaData.data.assets);
