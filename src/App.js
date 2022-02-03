@@ -9,6 +9,7 @@ function App() {
   const [selectedPunk, setSelectedPunk] = useState(0);
   useEffect(() => {
     const getMyNFTs = async () => {
+      axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
       const openseaData = await axios.get(
         "https://testnets-api.opensea.io/assets?asset_contract_address=0xE4C7B90063254c413E34f7f6a31664C0d567f669&order_direction=asc"
       );
